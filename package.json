@@ -1,22 +1,28 @@
 {
-  "name": "Assignement1-Express Portfolio Site",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./server.js"
-  },
+  "name": "express",
+  "version": "0.0.1",
+  "description": "Express Site",
+  "main": "index.js",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "boostrap": "^2.0.0",
     "bootstrap": "^4.6.0",
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "boostrap": "^2.0.0",
     "html-pdf": "^3.0.1",
-    "http-errors": "~1.6.3",
     "jquery": "^3.6.0",
-    "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateoD-0700/comp229-m2021-week3.git"
+  },
+  "author": "Mateo Davila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MateoD-0700/comp229-m2021-week3/issues"
+  },
+  "homepage": "https://github.com/MateoD-0700/comp229-m2021-week3#readme"
 }
