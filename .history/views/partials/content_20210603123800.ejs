@@ -1,0 +1,189 @@
+ <!--Home-->
+          <% if (title == "Home"){ %>
+             <div class="container text-center p-3">
+             <p>Motivated professional offering proficiency in data entry 
+             combined with strong analytical thinking skills. Personable team player with 
+             exceptional customer service abilities. Fast learner and committed to continuous, 
+             self-directed learning.</p>
+              <a class="btn btn-dark" href="/about" role="button">More about me</a>
+             </div>
+           <% } else {%>
+          
+          <%} %>
+          
+          <!--About-->
+          <% if (title == "About Me"){ %>
+          <img src="https://cdn.discordapp.com/attachments/759853913175228470/818688168671838258/me.jpg" height="200" 
+             class="border border-primary mx-auto d-block">
+             <div class="container d-flex justify-content-center p-2">
+             <ul>
+               <li>Name: Mateo Davila</li>
+               <li>Location: Toronto, Ontario</li>
+               <li>Occupation: Software Engineering Student at Centennial College </li>
+             </ul>  
+              <p class="p-3">Hi, my name is Mateo Davila. I am a third semester software engineering student at 
+              Centennial College. </p>
+              
+             </div>
+           <% } else {%>
+          
+          <%} %>
+         
+         <!--Projects-->
+         <% if (title == "Projects"){ %>
+             <div id="carouselExampleIndicators" class="carousel slide p-3" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 " src="https://cdn.discordapp.com/attachments/761023184698474509/848727413776580688/web_dev_sem_3_pic1.PNG" alt="First slide">
+    <div class="carousel-caption d-none d-md-block jumbotron">
+       <h5 style="color:black" ><strong>Javascript Table Generator</strong></h5>
+      <p style="color:black">I created this project to practice my plain vanilla JS skills and created a simple website that creates table cells as specified by the user</p>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://cdn.discordapp.com/attachments/761023184698474509/849038256922165299/webdevsem3pic2.PNG" alt="Second slide">
+       <div class="carousel-caption d-none d-md-block jumbotron">
+       <h5 style="color:black" ><strong>Vanilla HMTL/CSS/JS Responsive Portfolio</strong></h5>
+      <p style="color:black" >I created this project to work on my HTML/CSS/JS skills using media queries to create a responsive experience</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://cdn.discordapp.com/attachments/761023184698474509/849039709312909312/webdevsem3pic3.PNG" alt="Third slide">
+    <div class="carousel-caption d-none d-md-block jumbotron border border-dark">
+       <h5 style="color:black" ><strong>Latinx Shops</strong></h5>
+      <p style="color:black">I created this project to practice using Bootstrap. As a Latino myself, I wanted to create a mock idea to potentially expand on the future</p>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+           <% } else {%>
+          
+          <%} %>
+         
+     <!--Services-->
+     <% if (title == "Services"){ %>
+             <div class="container text-center p-2">
+              <p>I am confident with my skills in object-oriented software design methodologies, user-oriented interface design,
+               C#, Java, Oracle, MS-SQL Server, Unix/Linux, Microsoft's .NET, HTML5/JavaScript/XML, software testing and QA.</p>
+             <img src="https://cdn.discordapp.com/attachments/761023184698474509/849365098929455104/webdevsisi.jpg" 
+             height="230" width="400" class="border border-primary">
+             </div>
+           <% } else {%>
+          
+          <%} %>    
+          
+       <!--Contact Me-->   
+     <% if (title == "Contact Us"){ %>
+            <div class="container text-center p-2">
+         <section class="mb-4">    
+
+    <!--Section heading-->
+     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center p-5">
+                <a class="btn-block btn-lg btn-primary" href="/">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class=" fab fa-github fa-2x"></i>
+                    <p>MateoD-0700</p>
+                </li>
+
+                <li><a href="https://www.linkedin.com/in/matedavilai7" target="_blank"><i class=" fab fa-linkedin-in mt-4 fa-2x"></i></a> 
+                    <p>Mateo Davila Izquierdo</p> 
+                </li>
+
+                <li><a href="mailto:matedavilai@gmail.com" style="text-decoration:none;"><i class="fas fa-envelope mt-4 fa-2x"></i></a>
+                    <p>matedavilai@gmail.com</p>
+                </li>
+                
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+             </div>
+           <% } else {%>
+           
+           <%} %> 

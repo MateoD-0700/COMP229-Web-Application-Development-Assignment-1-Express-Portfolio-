@@ -1,0 +1,182 @@
+ <!--Home-->
+          <% if (title == "Home"){ %>
+             <div class="container text-center p-3">
+             <p id="hello">Motivated professional offering proficiency in data entry 
+             combined with strong analytical thinking skills. Personable team player with 
+             exceptional customer service abilities. Fast learner and committed to continuous, 
+             self-directed learning.</p>
+              <a class="btn btn-dark" href="/about" role="button">More about me</a>
+             </div>
+           <% } else {%>
+          
+          <%} %>
+          
+          <!--About-->
+          <% if (title == "About Me"){ %>
+              <section class="about-me" id="about">
+        <h2 class="section__title section__title__about" data-period = "2000" data-type='[ "Programmer.", "I am Creative.", "Full-Stack Enthusiast.", "Critical Thinker." ]'><span class="wrap"></span></h2>
+        <p class="section__subtitle section__subtitle__about">Who I am</p>
+        <div class="about-me__body">
+            <p>Motivated professional offering proficiency in web development combined with strong analytical thinking skills. Personable team player with exceptional customer service abilities. Fast learner and committed to continuous, self-directed learning.</p>
+            <p>I am confident with my skills in object-oriented software design methodologies, user-oriented interface design, C#, Java, Oracle, MS-SQL Server, Unix/Linux, Microsoft's .NET, HTML5/JavaScript/XML, software testing and QA.</p>
+        </div>
+        <img src="https://cdn.discordapp.com/attachments/759853913175228470/824081158186336258/image0.png" class="about-me__img">
+    </section>
+              
+             </div>
+           <% } else {%>
+          
+          <%} %>
+         
+         <!--Projects-->
+         <% if (title == "Projects"){ %>
+             <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work">A look at what I have to offer</p>
+        <div class="portfolio">
+            <!--Portfolio item 01-->
+            <div>
+            <a href="https://assignment-2.mateodavila2.repl.co/" class="portfolio__item" target="_blank">
+                <img src="https://cdn.discordapp.com/attachments/761023184698474509/848727413776580688/web_dev_sem_3_pic1.PNG" class="portfolio__img">
+            </a>
+            <h4 class="p-2">Javascript Table Generator</h4>
+            </div>
+
+            <!--Portfolio item 01-->
+            <div>
+            <a href="https://port.mateodavila2.repl.co/#home" target="_blank" class="portfolio__item">
+                <img src="https://cdn.discordapp.com/attachments/761023184698474509/849038256922165299/webdevsem3pic2.PNG" class="portfolio__img">
+            </a>
+            <h4 class="p-2">Vanilla HTML/CSS/JS Portfolio</h4>
+            </div>
+       
+            <!--Portfolio item 02-->
+            <div>
+            <a href="#" class="portfolio__item">
+                <img src="https://cdn.discordapp.com/attachments/761023184698474509/849039709312909312/webdevsem3pic3.PNG" class="portfolio__img">
+            </a>
+            <h4 class="p-2">LatinxShops</h4>
+            </div>
+
+            
+
+        </div>
+    </section>
+           <% } else {%>
+          
+          <%} %>
+         
+     <!--Services-->
+     <% if (title == "Services"){ %>
+             <div class="container text-center p-2">
+              <p></p>
+             <img src="https://cdn.discordapp.com/attachments/761023184698474509/849365098929455104/webdevsisi.jpg" 
+             height="230" width="400" class="border border-primary">
+             </div>
+           <% } else {%>
+          
+          <%} %>    
+          
+       <!--Contact Me-->   
+     <% if (title == "Contact Us"){ %>
+            <div class="container text-center p-2">
+         <section class="mb-4">    
+
+    <!--Section heading-->
+     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center p-5">
+                <a class="btn-block btn-lg btn-primary" href="/">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><a href="https://github.com/MateoD-0700"  style="color:black" target="_blank"><i class=" fab fa-github fa-2x"></i></a>
+                    <p>MateoD-0700</p>
+                </li>
+
+                <li><a href="https://www.linkedin.com/in/matedavilai7" style="color:black" target="_blank" ><i class=" fab fa-linkedin-in mt-4 fa-2x"></i></a> 
+                    <p>Mateo Davila Izquierdo</p> 
+                </li>
+
+                <li><a href="mailto:matedavilai@gmail.com" style="color:black"><i class="fas fa-envelope mt-4 fa-2x"></i></a>
+                    <p>matedavilai@gmail.com</p>
+                </li>
+                
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+             </div>
+           <% } else {%>
+           
+           <%} %> 

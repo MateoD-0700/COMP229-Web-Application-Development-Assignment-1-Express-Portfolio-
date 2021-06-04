@@ -1,0 +1,96 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+
+<body>
+ 
+   <!--Main Content-->
+  <main class="container">
+    <div class="jumbotron m-3">
+      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+    </div>
+         <!--Home-->
+          <% if (title == "Home"){ %>
+             <div class="container text-center p-3">
+             <p>Motivated professional offering proficiency in data entry 
+             combined with strong analytical thinking skills. Personable team player with 
+             exceptional customer service abilities. Fast learner and committed to continuous, 
+             self-directed learning.</p>
+              <a class="btn btn-dark" href="/about" role="button">More about me</a>
+             </div>
+           <% } else {%>
+          
+          <%} %>
+          
+          <!--About-->
+          <% if (title == "About Me"){ %>
+             <div class="container text-center p-2">
+             <img src="https://cdn.discordapp.com/attachments/759853913175228470/818688168671838258/me.jpg" height="300" 
+             class="border border-primary">
+             <h3><a href="">Mateo Davila Izquierdo</a></h3>
+              <p class="p-1">I am confident with my skills in object-oriented software design methodologies, user-oriented interface design,
+               C#, Java, Oracle, MS-SQL Server, Unix/Linux, Microsoft's .NET, HTML5/JavaScript/XML, software testing and QA.</p>
+             </div>
+           <% } else {%>
+          
+          <%} %>
+         
+         <!--Projects-->
+         <% if (title == "Projects"){ %>
+             <div class="container mt-3">
+
+  
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn.discordapp.com/attachments/761023184698474509/848727413776580688/web_dev_sem_3_pic1.PNG" 
+       width="1100" height="350">
+    </div>
+    <div class="carousel-item">
+      <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="ny.jpg" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+           <% } else {%>
+          
+          <%} %>
+         
+
+  </main>
+
+
+
+  
+
+  
+  <!--Bottom Nav-->
+  
+<%-  include partials/bottom_nav.ejs %>
+
+ <%-  include partials/footer.ejs %>
+
+
+

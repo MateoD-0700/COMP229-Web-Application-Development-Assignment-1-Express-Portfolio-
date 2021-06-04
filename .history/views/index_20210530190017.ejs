@@ -1,0 +1,42 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+
+<body>
+ 
+   <!--Main Content-->
+  <main class="container">
+    <div class="jumbotron ">
+      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+    </div>
+         
+          <% if (title == "Home"){ %>
+             <div class="container text-center ">
+             <p class="auto">Motivated professional offering proficiency in data entry 
+             combined with strong analytical thinking skills. Personable team player with 
+             exceptional customer service abilities. Fast learner and committed to continuous, 
+             self-directed learning.</p>
+              <button type="button" class=" btn btn-dark ">About Me</button>
+             </div>
+           <% } else {%>
+          
+          <%} %>
+     
+
+
+  </main>
+
+
+
+  
+
+  
+  <!--Bottom Nav-->
+  
+<%-  include partials/bottom_nav.ejs %>
+
+ <%-  include partials/footer.ejs %>
+
+
+
