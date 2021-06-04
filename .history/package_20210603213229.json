@@ -1,16 +1,17 @@
 {
-  "name": "Assignement1-Express Portfolio Site",
+  "name": "week 3.1",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
   },
   "engines":{
-    "node": "^12.18.3",
+    "node": "^12.00.0",
     "npm":"^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "boostrap": "^2.0.0",
     "bootstrap": "^4.6.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
